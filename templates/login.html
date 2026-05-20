@@ -1,8 +1,4 @@
-{% extends "layout.html" %}
-
-{% block title %}
-    Log In
-{% endblock %}
+<h1>Log In</h1> 
 
 {% block main %}
     <form action="/login" method="post">
@@ -14,4 +10,10 @@
         </div>
         <button class="btn btn-primary" type="submit">Log In</button>
     </form>
+    <p>
+        No account?
+        <a href="/register">Register here</a>
+    </p>
 {% endblock %}
+
+

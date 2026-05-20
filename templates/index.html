@@ -1,10 +1,14 @@
-{% extends "layout.html" %}
+<h1>Kleding</h1>
 
-{% block title %}
-    Unworn
-{% endblock %}
+<a href="/upload">
+  <button type="button">+ upload</button>
+</a>
 
-{% block main %}
-<h1>Unworn</h1>
+{% for item in items %}
+<div>
+  <h3>{{ item.naam }}</h3>
+  <p>{{ item.categorie }}</p>
+  <img src="{{ item.image_path }}" width="150" height="250">
+</div>
 
-{% endblock %}
+{% endfor %}
